@@ -55,13 +55,31 @@
                     <view key="view" contentMode="scaleToFill" id="iJ3-fB-ZnW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="14y-Lc-OSd">
+                                <rect key="frame" x="162.5" y="311.5" width="50" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Dl8-U3-82K"/>
+                                    <constraint firstAttribute="height" constant="44" id="RM8-sK-VyU"/>
+                                </constraints>
+                                <state key="normal" title="BACK"/>
+                                <connections>
+                                    <action selector="back:" destination="54Q-g1-Z8q" eventType="touchUpInside" id="4EU-z5-hVw"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="14y-Lc-OSd" firstAttribute="centerY" secondItem="iJ3-fB-ZnW" secondAttribute="centerY" id="TY2-cD-zLE"/>
+                            <constraint firstItem="14y-Lc-OSd" firstAttribute="centerX" secondItem="iJ3-fB-ZnW" secondAttribute="centerX" id="UP2-sC-BA7"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="CAU-om-dWg"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F6v-5P-fCN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1087" y="102"/>
+            <point key="canvasLocation" x="1085.5999999999999" y="101.19940029985008"/>
         </scene>
     </scenes>
 </document>
