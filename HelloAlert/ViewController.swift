@@ -26,6 +26,12 @@ class ViewController: UIViewController {
         }
         alertController.addAction(okAction)
         
+        let cancelAtion = UIAlertAction(title: "Cancelxxx", style: .cancel) { (alert) in
+            print(alert.title)
+        }
+        alertController.addAction(cancelAtion)
+        
+        
         present(alertController, animated: true, completion: nil)
         
         
