@@ -37,5 +37,10 @@ class ViewController: UIViewController {
         
     }
     
+    @IBAction func action2(_ sender: Any) {
+        let stroyboard = UIStoryboard(name: "Main", bundle: nil)
+        let nextVC = stroyboard.instantiateViewController(identifier: "myNewVCID")
+        present(nextVC, animated: true, completion: nil)
+    }
 }
 
