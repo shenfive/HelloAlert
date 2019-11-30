@@ -10,6 +10,11 @@ import UIKit
 
 class MyNewViewController: UIViewController {
 
+    @IBOutlet weak var textField: UITextField!
+    
+    var callBack:((String)->())? = nil
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,5 +26,8 @@ class MyNewViewController: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
 
-
+    @IBAction func callBack(_ sender: Any) {
+        callBack?(textField.text ?? "nothing")
+    }
+    
 }
