@@ -15,6 +15,21 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func action(_ sender: Any) {
+        let alertController = UIAlertController(
+            title: "請注意",
+            message: "看我這兒好嗎？",
+            preferredStyle: .alert)
+        
+        let okAction = UIAlertAction(title: "OK", style: .default) { (action) in
+            print("OK clicked")
+        }
+        alertController.addAction(okAction)
+        
+        present(alertController, animated: true, completion: nil)
+        
+        
+    }
+    
 }
 
