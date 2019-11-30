@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         let alertController = UIAlertController(
             title: "請注意",
             message: "看我這兒好嗎？",
-            preferredStyle: .alert)
+            preferredStyle: .actionSheet)
         
         let okAction = UIAlertAction(title: "OK", style: .default) { (action) in
             print("OK clicked")
@@ -40,7 +40,8 @@ class ViewController: UIViewController {
     @IBAction func action2(_ sender: Any) {
         let stroyboard = UIStoryboard(name: "Main", bundle: nil)
         let nextVC = stroyboard.instantiateViewController(identifier: "myNewVCID")
-        nextVC.modalPresentationStyle = .fullScreen
+        nextVC.modalPresentationStyle = .overCurrentContext
+        
         present(nextVC, animated: true, completion: nil)
     }
 }
